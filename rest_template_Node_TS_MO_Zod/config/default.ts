@@ -1,6 +1,6 @@
 export default
 {
     port: 1337,
-    dbUri: "mongodb://localhost:27017/rest_new"
-    
+    dbUri: "mongodb://localhost:27017/rest_new",
+    saltWorkFactor: 10,   
 }
