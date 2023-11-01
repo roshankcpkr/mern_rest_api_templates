@@ -3,7 +3,7 @@ export default
     port: 1337,
     dbUri: "mongodb://localhost:27017/rest_new",
     saltWorkFactor: 10,
-    accessTokenTtl: "-1",
+    accessTokenTtl: "15m",
     refreshTokenTtl: "1y",
     publicKey: `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8EkX3heQ4X/lOONZb+VP
