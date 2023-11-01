@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1698840394529,
+      "tag": "0000_gray_chronomancer",
+      "breakpoints": false
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1698840796067,
+      "tag": "0001_lame_lilandra",
+      "breakpoints": false
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1698840998933,
+      "tag": "0002_amused_wallflower",
+      "breakpoints": false
+    }
+  ]
+}

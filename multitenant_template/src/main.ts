@@ -1,6 +1,8 @@
+import {migrate} from "drizzle-orm/node-postgres/migrator"
 import { env } from "./config/env"
 import { buildServer } from "./utils/server"
 import { logger } from "./utils/logger"
+import { db } from "./db"
 
 async function gracefulShutdown({app}: {
     app: Awaited<ReturnType<typeof buildServer>>
@@ -17,6 +19,9 @@ async function main()
         host : env.HOST
     })
 
+    await migrate(db, {
+        migrationsFolder: "./migrations",
+    })
     const signals = ['SIGINT', 'SIGTERM'] as const
     logger.debug(env, "Environment variables")
     for (const signal of signals)
