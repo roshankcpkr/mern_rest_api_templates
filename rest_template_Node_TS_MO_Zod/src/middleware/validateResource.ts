@@ -8,6 +8,7 @@ const validate = (schema: AnyZodObject)=> (req:Request, res: Response, next:Next
             query: req.query,
             params: req.params
         })
+        next()
     }
     catch(error: any)
     {
